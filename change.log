@@ -1,0 +1,215 @@
+`1.5 03/12/2014`
+
+- New mailbox routes and load mails from JSON api
+- New angular ngDialog
+- Update AngularJS to 1.2.27
+- Update UI Router to 0.2.12
+- Update ocLazyLoad to 0.5.0
+- Added angular-resource by default in base vendor files
+- Added support for links at top level menu items
+- Added multilevel menu with nested views
+- Added sparkline element support
+- Fix chosen plugin not responsive
+- Fix parsley on form wizard
+- Fix datepicker in search page
+- Removed datepicker directive script
+
+  New files:
+
+  A app/views/ngdialog-template.html
+  A app/views/ngdialog.html
+  A master/jade/views/ngdialog-template.jade
+  A master/jade/views/ngdialog.jade
+  A master/js/modules/controllers/demo-dialog.js
+  A master/less/app/ngdialog.less
+  A server/mails.json
+
+  Modified files:
+
+  M app/css/app-rtl.css
+  M app/css/app.css
+  M app/js/app.js
+  M app/js/base.js
+  M app/views/mailbox-compose.html
+  M app/views/mailbox-inbox.html
+  M app/views/mailbox-view.html
+  M app/views/mailbox.html
+  M app/views/partials/sidebar.html
+  M app/views/search.html
+  M app/views/table-extended.html
+  M master/gulpfile.js
+  M master/jade/views/mailbox-compose.jade
+  M master/jade/views/mailbox-inbox.jade
+  M master/jade/views/mailbox-view.jade
+  M master/jade/views/mailbox.jade
+  M master/jade/views/partials/sidebar.jade
+  M master/jade/views/search.jade
+  M master/jade/views/table-extended.jade
+  M master/js/app.init.js
+  M master/js/modules/config.js
+  M master/js/modules/constants.js
+  M master/js/modules/controllers/mailbox.js
+  M master/js/modules/controllers/main.js
+  M master/js/modules/controllers/sidebar-menu.js
+  M master/js/modules/directives/sparklines.js
+  M master/less/app.less
+  M master/less/app/layout.less
+  M master/less/app/mailbox.less
+  M master/less/app/ngwig.less
+  M master/less/app/plugins.less
+  M master/less/app/sidebar.less
+  M master/less/app/table-grid.less
+  M master/less/app/utils.less
+  M server/sidebar-menu.json
+
+  Removed files:
+
+  D master/js/modules/directives/datepicker.js
+
+`1.4 21/11/2014`
+
+- New form controller for chosen data
+- New controllers for login/register pages
+- New form validation for login/register pages
+- New datatable option to hide columns by default
+- New custom.js demo for easy customization (master folder)
+- Fix topnavbar position on fixed-boxed layout
+- Fix iOS input style (shadow removed)
+- Fix Safari issue with sidebar no showing
+- Fix padding size (hidden text on small input text - Thanks ChrisMK)
+- Fix ng-bind data on pages footer
+- Update documentation
+
+  New files:
+
+  A master/js/custom/README.txt
+  A master/js/custom/custom.js
+  A master/js/modules/controllers/access-login.js
+  A master/js/modules/controllers/access-register.js
+  A master/js/modules/controllers/demo-forms.js
+  
+  Modified files:
+  
+  M app/css/app-rtl.css
+  M app/css/app.css
+  M app/documentation/readme.md
+  M app/js/app.js
+  M app/js/base.js
+  M app/pages/lock.html
+  M app/pages/login.html
+  M app/pages/recover.html
+  M app/pages/register.html
+  M app/views/form-extended.html
+  M master/gulpfile.js
+  M master/jade/pages/lock.jade
+  M master/jade/pages/login.jade
+  M master/jade/pages/recover.jade
+  M master/jade/pages/register.jade
+  M master/jade/views/app.jade
+  M master/jade/views/form-extended.jade
+  M master/js/app.init.js
+  M master/js/modules/config.js
+  M master/js/modules/controllers/datatable.js
+  M master/js/modules/directives/chosen-select.js
+  M master/less/app/bootstrap-reset.less
+  M master/less/app/form-elements.less
+  M master/less/app/layout.less
+  M master/less/app/top-navbar.less
+  M master/less/bootstrap/variables.less
+
+`1.3 19/11/2014`
+
+- New Angular Wysiwyg
+- New Mailbox app nested routes
+- New Form upload demo
+- Update Font Awesome to 4.2.0
+- Fix null anchor directive check for dropdown links
+  
+  New files:
+
+  A app/views/form-upload.html
+  A app/views/mailbox-compose.html
+  A app/views/mailbox-inbox.html
+  A app/views/mailbox-view.html
+  A master/jade/views/form-upload.jade
+  A master/jade/views/mailbox-compose.jade
+  A master/jade/views/mailbox-inbox.jade
+  A master/jade/views/mailbox-view.jade
+  A master/js/modules/controllers/mailbox.js
+  A master/less/app/ngwig.less
+
+  Modified files:
+
+  M app/css/app-rtl.css
+  M app/css/app.css
+  M app/i18n/en.json
+  M app/i18n/es_AR.json
+  M app/js/app.js
+  M app/views/form-extended.html
+  M app/views/icons-font.html
+  M app/views/mailbox.html
+  M app/views/partials/top-navbar.html
+  M master/jade/views/form-extended.jade
+  M master/jade/views/icons-font.jade
+  M master/jade/views/mailbox.jade
+  M master/jade/views/partials/top-navbar.jade
+  M master/js/modules/config.js
+  M master/js/modules/constants.js
+  M master/js/modules/controllers/demo-upload.js
+  M master/js/modules/directives/anchor.js
+  M master/less/app.less
+  M master/less/app/bootstrap-reset.less
+  M master/less/app/form-elements.less
+  M master/less/app/layout.less
+  M master/less/app/mailbox.less
+  M master/less/app/utils.less
+  M master/less/bootstrap/variables.less
+  M server/sidebar-menu.json
+  M server/upload.php
+
+`1.2 18/11/2014`
+
+- Update Flot charts to 0.8.3
+- Update Fullcalendar to 2.0.3
+- Update Momentjs to 2.8.3
+- Update jQueryUI to 1.11.1
+- Update vendor path for lazy load
+- Removed Bootstrap Datetimepicker (in favor of BootstrapUI)
+- Added example code for custom routes resolve
+- Fix markdown editor fullscreen mode
+- Fix minor code changes
+- Update documentation
+
+  Modified Files
+
+  M app/css/app-rtl.css
+  M app/css/app.css
+  M app/documentation/readme.md
+  M app/js/app.js
+  M app/views/form-extended.html
+  M master/jade/views/form-extended.jade
+  M master/js/modules/config.js
+  M master/js/modules/constants.js
+  M master/js/modules/directives/now.js
+  M master/js/modules/directives/validate-form.js
+  M master/less/app/markdownarea.less
+  D master/js/modules/directives/datepicker.js
+
+`1.1 08/10/2014`
+
+- Added Profile
+- Added Todo List 
+- Added changed and livereload to gulp file
+- Removed store.js in favor of native storage support
+- Removed w3c from gulp file (optional)
+- Fix on sidebar item active class check 
+- Fix modules dependency injection
+- Fix chart y axis position on RTL
+- Update timeline component
+- Update calendar component
+- Update node package modules
+- Updated documentation
+
+`1.0 30/09/2014`
+
+- Initial release
